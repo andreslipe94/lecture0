@@ -12,6 +12,15 @@
 
   gtag('config', 'UA-119985358-1');
 </script>
+
+<script>
+  $(document).ready(function () {
+    $.getJSON("http://jsonip.com/?callback=?", function (data) {
+        console.log(data);
+        alert(data.ip);
+    });
+});
+</script>
   </head>
   <body>
     <img src="https://img.scoop.it/kKqdTMptwMfWPzY__HyoRzl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9" width="300px"
